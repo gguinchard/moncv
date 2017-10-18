@@ -1,18 +1,19 @@
 body
-{
+{/* Cette image est un degradé constitué de 11 couleurs différentes, pour collé à mon cv d'origine */
     background-image: linear-gradient(to bottom, #1B9BD8, #49AFE0,#73C2E7, #99D2EE, #B9E0F3, #D2EBF7, #D2EBF7, #E6F4FB, #F4FAFD, #FDFEFF, #FFFFFF 30%);
 }
-@font-face { 
+@font-face { /* L'appel de la typo montserrat bold est remplacé d'office par une typo du serveur typeface seon la compatibilité du navigateur */
     font-family: 'MontserratAlternates-Bold'; src: url('MontserratAlternates-Bold.ttf') format('truetype');
-    font-family: 'MontserratAlternates-Regular';src: url('MontserratAlternates-Regular.ttf') format('truetype')
+    font-family: 'MontserratAlternates-Regular';src: url('MontserratAlternates-Regular.ttf') format('truetype');
+font-family: 'MontserratAlternates-Italic';src: url('MontserratAlternates-Italic.ttf') format('truetype');
 }
 *
 {
 font-family: 'MontserratAlternates-Regular'; 'Arial'; 'sans-serif';
 }
 h1, h2,
-{
-font-family: 'uppercut-angle'; 'arial black'; 'MontserratAlternates-Bold'; 'sans-serif';
+{/* Les Titres H2 sont automatique en uppercut si le navigateur accepte le serveur typekit, sinon Montesserrat bold est utilisé et ensuite Arial black et pour finir une sans-serif par défaut si tout le reste ne charge pas */
+font-family: 'uppercut-angle'; 'MontserratAlternates-Bold'; 'arial black';'sans-serif';
 }
 h1 em
 {
@@ -20,7 +21,9 @@ font-style: normal; font-family: 'uppercut-angle'; 'arial black'; 'MontserratAlt
  font-size: 0.7em; color: #E40D7E; text-align: right
 }
 h1
-{ color: #white; /* Commentaire */
+{ /* Le titre h1 est encapsulé dans une box avec une marge incorporée,
+par la suite je cherche à modifié cette boite en forme de bulle de bd avec une fonction polygon peut-être ou shape ?*/
+color: #white; /* Commentaire */
 color: #E40D7E;  font-size: 2em;
 text-shadow: 1px 1px 1px grey;
  width: 2em;
@@ -33,45 +36,49 @@ width : auto;
 margin-right: 1em;
 }
 h5
-{
+{/* h5 est un sous-titre pour la bio */
 font-weight: normal; font-size: em; text-align: solid;
 clear: both;
 }
 .photo-cv
-img {
-border-radius: 100px;box-shadow: 1px 1px 1Px black;
+img {/* Cette photo flottante est arrondi avec effet d'ombrage*/
+border-radius: 100px; box-shadow: 1px 1px 1Px black;
 width:100%x;
 float:left;
 text-align:left;
 margin: 0px 0px 20px 10px
 }
 .toolbar
-img{
+img{/* L'image flottante toolbar est un fichier vectoriel svg, il donc agrandissable à volonté, la balise margin permet d'avoir un retrait du texte sur la droite */
 float:left;
 text-align:left;
 height : 20em;
 margin: 5px 10px 5px 5px
 }
-h2{
+h2{/* Le format du texte est adapté en proportion par la commande font-size et une ombre est appliqué avec text-shadow */
 font-size: 1.5em; font-weight: bold; color: #E40D7E;
  text-shadow: 1px 1px 1px grey;
 }
 .experiences
-{;text-align: left;margin-left: 4em; margin-right: 6em
+{
+text-align: left; margin-left: 4em; margin-right: 6em
 }
 ul
 {
 font-size: 1em; color:black; text-align: left
 }
 ul em
-{
-font-size 1em; color: black;
+{/* les postes sont en oblique avec une typo oblique et la commande font-style oblique*/
+font-family: 'MontserratAlternates-Italic'; font-style: oblique;
+ font-size 1em; color: black;
 }
 ul strong
-{font-style: regular ; font-size: 1em; font-weight: bold; color: midnightblue;
+{/* La liste à puce est mis pas en pages avec une couleur differente sur les dates entroduit par la balise html <strong> */
+font-family: 'MontserratAlternates-Bold';'MontserratAlternates-Bold'; 'arial black';font-style: bold; font-size: 1em; font-weight: bold; color: midnightblue;
 }
 .skill_module
-{width: 20em;
+{/* Cette infographie est un fichier vectoriel, svg créer sur illustrator */
+width: 20em;
 float: center;
 text-align:right;
 height : 0.1em;
@@ -86,10 +93,4 @@ font-size: 1em; color:black;
 {
 font-size: 1em; color:black;
 }
-<div>
-texte
-</div>
-
-<span> salut </span>
-h1 +p
-h1 em
+/* Merci Pour cette correction */
