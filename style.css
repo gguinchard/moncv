@@ -2,13 +2,13 @@ body
 {
     background-image: linear-gradient(to bottom, #1B9BD8, #49AFE0,#73C2E7, #99D2EE, #B9E0F3, #D2EBF7, #D2EBF7, #E6F4FB, #F4FAFD, #FDFEFF, #FFFFFF 30%);
 }
-
 .photo-cv
 img {
 border-radius: 100px; border: solid 4px white;
 width:100%x;
 float:left;
-text-align:left; float: left;
+text-align:left;
+margin: 0px 0px 20px 10px
 }
 .toolbar
 img{
@@ -17,7 +17,6 @@ text-align:left;
 height : 20em;
 margin: 5px 10px 5px 5px
 }
-
 *
 {
 font-family: Verdana; sans-serif;
@@ -28,7 +27,8 @@ font-family: "uppercut-angle";
 }
 h1 em
 {
-font-family: "uppercut-angle"; font-size: 0.7em; color: #E40D7E; text-align: center
+font-style: normal; font-family: san-serif, "uppercut-angle", Verdana;
+ font-size: 0.7em; color: #E40D7E; text-align: right
 }
 h1
 { color: #white; /* Commentaire */
@@ -36,11 +36,11 @@ color: #E40D7E; font-weight: bold; font-size: 2em;
 text-shadow: 1px 1px 1px grey;
  width: 2em;
 background-color: white;
-text-align:left;
+text-align:right;
 float: left;
 width : auto;
   height : auto;
-  padding: 0.2em 0.2em 0.2em 0.2em;
+  padding: 0.3em 0.3em 0.3em 0.3em;
 margin-right: 1em;
 }
 h5
