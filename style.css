@@ -102,4 +102,15 @@ font-size: 1em; color:black;
 {
 font-size: 1em; color:black;
 }
-/* Merci Pour cette correction */
+{
+   text-decoration: none;
+   color: midnightblue;
+   font-style: italic;
+}
+
+a:hover /* Apparence au survol des liens */
+{
+     color:white ; background-color: #E40D7E;
+}
+/* Vous pouvez aussi testé ce site sur https://gguinchard.github.io/moncv/
+Merci Pour cette correction */
