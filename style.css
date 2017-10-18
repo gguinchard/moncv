@@ -3,10 +3,19 @@ body
     background-image: linear-gradient(to bottom, #1B9BD8, #49AFE0,#73C2E7, #99D2EE, #B9E0F3, #D2EBF7, #D2EBF7, #E6F4FB, #F4FAFD, #FDFEFF, #FFFFFF 30%);
 }
 @font-face { /* L'appel de la typo montserrat bold est remplacé d'office par une typo du serveur typeface seon la compatibilité du navigateur */
-    font-family: 'MontserratAlternates-Bold'; src: url('MontserratAlternates-Bold.ttf') format('truetype');
-    font-family: 'MontserratAlternates-Regular';src: url('MontserratAlternates-Regular.ttf') format('truetype');
-font-family: 'MontserratAlternates-Italic';src: url('MontserratAlternates-Italic.ttf') format('truetype');
+    font-family: 'MontserratAlternates-Bold'; src: url('MontserratAlternates-Bold.ttf') format('truetype'),
+    url('MontserratAlternates-Bold.otf') format('opentype');
 }
+@font-face
+{
+    font-family: 'MontserratAlternates-Regular';
+    src: url('MontserratAlternates-Regular.ttf') format('truetype'),
+        url('MontserratAlternates-Regular.otf') format('opentype');
+}
+@font-face
+{
+    font-family: 'MontserratAlternates-Italic';
+    src: url('MontserratAlternates-Italic.ttf') format('truetype');}
 *
 {
 font-family: 'MontserratAlternates-Regular'; 'Arial'; 'sans-serif';
@@ -82,7 +91,7 @@ width: 20em;
 float: center;
 text-align:right;
 height : 0.1em;
-margin: 0em 10em 0px 10em
+margin: 0em 10em 0em 15em
 
 }
 .skills
