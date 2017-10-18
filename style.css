@@ -3,22 +3,20 @@ body
     background-image: linear-gradient(to bottom, #1B9BD8, #49AFE0,#73C2E7, #99D2EE, #B9E0F3, #D2EBF7, #D2EBF7, #E6F4FB, #F4FAFD, #FDFEFF, #FFFFFF 30%);
 }
 @font-face { 
-    font-family: 'MontserratAlternates-Bold'; src: url('MontserratAlternates-Bold.ttf') format('truetype'),
-}
-@font-face { 
-    font-family: 'MontserratAlternates-Regular';src: url('MontserratAlternates-Regular.ttf') format('truetype'),
+    font-family: 'MontserratAlternates-Bold'; src: url('MontserratAlternates-Bold.ttf') format('truetype');
+    font-family: 'MontserratAlternates-Regular';src: url('MontserratAlternates-Regular.ttf') format('truetype')
 }
 *
 {
-font-family: arial; sans-serif, 'MontserratAlternates-Regular';
+font-family: 'MontserratAlternates-Regular'; 'Arial'; 'sans-serif';
 }
 h1, h2,
 {
-font-family: "uppercut-angle", 'MontserratAlternates-Bold', 'arial black', sans-serif;
+font-family: 'uppercut-angle'; 'arial black'; 'MontserratAlternates-Bold'; 'sans-serif';
 }
 h1 em
 {
-font-style: normal; font-family: "uppercut-angle", 'MontserratAlternates-Bold', 'arial black', sans-serif;
+font-style: normal; font-family: 'uppercut-angle'; 'arial black'; 'MontserratAlternates-Bold'; 'sans-serif';
  font-size: 0.7em; color: #E40D7E; text-align: right
 }
 h1
@@ -56,7 +54,7 @@ margin: 5px 10px 5px 5px
 }
 h2{
 font-size: 1.5em; font-weight: bold; color: #E40D7E;
- text-shadow: 1px 1px 1px white;
+ text-shadow: 1px 1px 1px grey;
 }
 .experiences
 {;text-align: left;margin-left: 4em; margin-right: 6em
