@@ -19,17 +19,14 @@ font-family: 'MontserratAlternates-Regular'; 'Arial'; 'sans-serif';
 
 
 body
-{/* Cette image est un degradé constitué de 11 couleurs différentes, pour collé à mon cv d'origine  
-    display: flex;
-justify-content: flex-start;
-flex-wrap: nowrap;
-    flex-direction: column; */
+{/* Cette image est un degradé constitué de 11 couleurs différentes, pour collé à mon cv d'origine */
 width:1m;
 margin: 1em;
 background-image: linear-gradient(to bottom, #1B9BD8, #49AFE0,#73C2E7, #99D2EE, #B9E0F3, #D2EBF7, #D2EBF7, #E6F4FB, #F4FAFD, #FDFEFF, #FFFFFF 30%) ;
 }
 .toolbar
-{ position: fixed;
+{/* Cette barre des taches est un liseret bortedr radius avec un background image en svg (donc modifiable sans dégradation) la position fixed et le top et bottom fixé à 0 à l'intérieur de body permet de s'afficher sur toute la hauteur de la page */
+ position: fixed;
     left: 0px;
     bottom: 0px;
     top: 0px;
@@ -40,6 +37,16 @@ background-repeat: no-repeat;
 box-shadow:  2px 2px 2px black;
 border-radius: 5px;
     margin-right: 5em;
+}
+
+.socialnetwork
+{
+position: fixed;
+ left: 0.2em;
+    bottom: 1em;
+width: 3em;
+font-size: 0.8em; color:white; text-align: left;
+width: 10%;
 }
 .contenu
 {
@@ -63,7 +70,7 @@ font-style: normal; font-family: 'uppercut-angle'; 'arial black'; 'MontserratAlt
 h1
 { /* Le titre h1 est encapsulé dans une box avec une marge incorporée,
 par la suite je cherche à modifié cette boite en forme de bulle de bd avec une fonction polygon peut-être ou shape ?*/
-color: #white; /* Commentaire */
+color: #white; 
 display: inline-block;
 vertical-align: top;
 color: #E40D7E;  font-size: 2em;
@@ -73,7 +80,7 @@ background-color: white;
 text-align:right;
 float: left;
 width : auto;
-  height : 3em;
+  height : auto;
   padding: 0.2em;
 margin-right: 0.5em
 }
