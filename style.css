@@ -1,7 +1,3 @@
-body
-{/* Cette image est un degradé constitué de 11 couleurs différentes, pour collé à mon cv d'origine */
-    background-image: linear-gradient(to bottom, #1B9BD8, #49AFE0,#73C2E7, #99D2EE, #B9E0F3, #D2EBF7, #D2EBF7, #E6F4FB, #F4FAFD, #FDFEFF, #FFFFFF 30%);
-}
 @font-face { /* L'appel de la typo montserrat bold est remplacé d'office par une typo du serveur typeface seon la compatibilité du navigateur */
     font-family: 'MontserratAlternates-Bold'; src: url('MontserratAlternates-Bold.ttf') format('truetype'),
     url('MontserratAlternates-Bold.otf') format('opentype');
@@ -20,6 +16,41 @@ body
 {
 font-family: 'MontserratAlternates-Regular'; 'Arial'; 'sans-serif';
 }
+
+
+body
+{/* Cette image est un degradé constitué de 11 couleurs différentes, pour collé à mon cv d'origine  
+    display: flex;
+justify-content: flex-start;
+flex-wrap: nowrap;
+    flex-direction: column; */
+width:1m;
+margin: 1em;
+background-image: linear-gradient(to bottom, #1B9BD8, #49AFE0,#73C2E7, #99D2EE, #B9E0F3, #D2EBF7, #D2EBF7, #E6F4FB, #F4FAFD, #FDFEFF, #FFFFFF 30%) ;
+}
+.toolbar
+{ position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    width: 10%;
+background-color: grey;
+background-image: url(toolbar.svg);
+background-repeat: no-repeat;
+box-shadow:  2px 2px 2px black;
+border-radius: 5px;
+    margin-right: 5em;
+}
+.contenu
+{
+margin-left: 12%;
+}
+header
+{
+background-color: red;
+vertical-align: top;
+justify-content: center;
+}
 h1, h2,
 {/* Les Titres H2 sont automatique en uppercut si le navigateur accepte le serveur typekit, sinon Montesserrat bold est utilisé et ensuite Arial black et pour finir une sans-serif par défaut si tout le reste ne charge pas */
 font-family: 'uppercut-angle'; 'MontserratAlternates-Bold'; 'arial black';'sans-serif';
@@ -27,87 +58,122 @@ font-family: 'uppercut-angle'; 'MontserratAlternates-Bold'; 'arial black';'sans-
 h1 em
 {
 font-style: normal; font-family: 'uppercut-angle'; 'arial black'; 'MontserratAlternates-Bold'; 'sans-serif';
- font-size: 0.7em; color: #E40D7E; text-align: right
+ font-size: 0.7em; color: #E40D7E; text-align: right;
 }
 h1
 { /* Le titre h1 est encapsulé dans une box avec une marge incorporée,
 par la suite je cherche à modifié cette boite en forme de bulle de bd avec une fonction polygon peut-être ou shape ?*/
 color: #white; /* Commentaire */
+display: inline-block;
+vertical-align: top;
 color: #E40D7E;  font-size: 2em;
 text-shadow: 1px 1px 1px grey;
- width: 2em;
+ width: 1em;
 background-color: white;
 text-align:right;
 float: left;
 width : auto;
-  height : auto;
-  padding: 0.3em 0.3em 0.3em 0.3em;
-margin-right: 1em;
-}
-h5
-{/* h5 est un sous-titre pour la bio */
-font-weight: normal; font-size: em; text-align: solid;
-clear: both;
+  height : 3em;
+  padding: 0.2em;
+margin-right: 0.5em
 }
 .photo-cv
 img {/* Cette photo flottante est arrondi avec effet d'ombrage*/
+display: inline-block;
+vertical-align: top;
 border-radius: 100px; box-shadow: 1px 1px 1Px black;
-width:100%x;
+width:10em;
 float:left;
 text-align:left;
-margin: 0px 0px 20px 10px
+margin: 0px 0px 20px 10px;
+height : 10em;
 }
-.toolbar
-img{/* L'image flottante toolbar est un fichier vectoriel svg, il donc agrandissable à volonté, la balise margin permet d'avoir un retrait du texte sur la droite */
-float:left;
-text-align:left;
-height : 20em;
-margin: 5px 10px 5px 5px
+
+#colonne
+{background-color: red;
+vertical-align: baseline;
+
+}
+
+
+
+.biographie
+{/* h5 est un sous-titre pour la bio */
+display: inline-block;
+vertical-align: top;
+width: 100%;
+height : 5%;
+font-weight: normal; font-size: em; text-align: solid;
+}
+
+
+#colonne
+{
+   margin-left: 170px;
+
+vertical-align: top;
+background-color: orange
+    
 }
 h2{/* Le format du texte est adapté en proportion par la commande font-size et une ombre est appliqué avec text-shadow */
-font-size: 1.5em; font-weight: bold; color: #E40D7E;
+font-size: 1.3em; font-weight: bold; color: #E40D7E;
  text-shadow: 1px 1px 1px grey;
 }
 .experiences
-{
-text-align: left; margin-left: 4em; margin-right: 6em
+{display: inline-block;
+vertical-align: top;
+list-style-type: none;
+text-align: left; margin-left: 0em; margin-right: 0em;
+width:30%;
 }
+
+.skill_module
+{/* Cette infographie est un fichier vectoriel, svg créer sur illustrator */
+width: 100%;
+float: center;
+text-align:right;
+margin: 0em 0em 0em 0m;
+
+}
+.skills
+{display: inline-block;
+vertical-align: top;
+
+list-style-type: none;
+font-size: 1em; color:red;
+width: 35%;
+}
+
 ul
 {
+list-style-type: none;
 font-size: 1em; color:black; text-align: left
 }
 ul em
 {/* les postes sont en oblique avec une typo oblique et la commande font-style oblique*/
+list-style-type: none;
 font-family: 'MontserratAlternates-Italic'; font-style: oblique;
  font-size 1em; color: black;
 }
 ul strong
 {/* La liste à puce est mis pas en pages avec une couleur differente sur les dates entroduit par la balise html <strong> */
+list-style-type: none;
 font-family: 'MontserratAlternates-Bold';'MontserratAlternates-Bold'; 'arial black';font-style: bold; font-size: 1em; font-weight: bold; color: midnightblue;
 }
-.skill_module
-{/* Cette infographie est un fichier vectoriel, svg créer sur illustrator */
-width: 20em;
-float: center;
-text-align:right;
-height : 0.1em;
-margin: 0em 10em 0em 15em
 
-}
-.skills
-{
-font-size: 1em; color:black;
-}
 .formations
-{
+{display: inline-block;
+vertical-align: top;
+list-style-type: none;
 font-size: 1em; color:black;
-}
-{
-   text-decoration: none;
-   color: midnightblue;
-   font-style: italic;
+list-style-type: none;
+width: 30%
 }
 
+footer
+{
+height : 3%;
+}
 a:hover /* Apparence au survol des liens */
 {
      color:white ; background-color: #E40D7E;

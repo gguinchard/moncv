@@ -9,18 +9,34 @@
 des serveurs de typekit, cette typo est utilisé pour les titres h1 et h2 -->
 <script src="https://use.typekit.net/zue0hhs.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <!-- corp de la page -->
     <body>
-<div>
-               <h1 id="introduction"> Guillaume Guinchard<br /><em>UI designer</em></h1> 
-        <p class="photo-cv"><a href="profil-cv-large.jpg"><img src="profil-cv.jpg" /></a></p>    </div>
-        <h5> Je pratique principalement une activité de UI designer et designer en communication globale.<br />J’ai diverses expériences en web design, graphisme, publicité, édition, et imprimerie.</h5>
-   <div class="socialnetwork">
+                <!-- ouverture d'un div pour adapter en flex -->
+                <div class="contenu">
+        <!-- incorporation du liseret -->
+       <div class="toolbar"></div>
+                    <!-- entête -->
+            <header>
+     <h1 id="introduction"> Guillaume Guinchard<br /><em>UI designer</em></h1> 
+        <p class="photo-cv"><a href="profil-cv-large.jpg"><img src="profil-cv.jpg" /></a></p> 
+</header>
+      
+        
+        <section class="biographie">
+            
+        <em> Je pratique principalement une activité de UI designer et designer en communication globale.<br />J’ai diverses expériences en web design, graphisme, publicité, édition, et imprimerie.</em>
+            </section>
+  <nav>
+        <div class="socialnetwork">
 <p class="logo_Linkedin"><a href="https://www.linkedin.com/in/guillaumeguinchard/"><img src="linkedin-logo.png" alt="mon profil" title="lien vers mon profil linkedin"/></a> mon profil linkedin</p>
 </div>
-    
-<h2>Expériences professionnelles</h2>
-         <p class="toolbar"><img src="toolbar.svg" /></p>  
-       <ul class="experiences">
+      </nav>
+       
+     <div class="colonne">        
+        <article class="experiences">
+<h2>Mon expérience</h2>
+          
+       <ul >
            <li><strong>Depuis le 09/2011</strong><br />
                <em>UI Designer freelance</em><br />Conception de wireframe, Conception d'interface, Conception de mockup</li>
        <p></p>
@@ -35,9 +51,11 @@ des serveurs de typekit, cette typo est utilisé pour les titres h1 et h2 -->
            <p></p>
             <li><strong>Du 09/2001 au 08/2002</strong><br /><em>Assistant Offset</em><br />Maquettes web, print et intégration<br />Imprimerie Petit-Jean, Beaucourt</li>
         </ul>
-<h2>Compétences</h2>
+            </article>
+       <article class="skills"> 
+<h2>Mes compétences</h2>
          <p class="skill_module"><img src="skill_module.svg" /></p>  
-       <ul class="skills">
+       <ul>
            <li>Photoshop</li>
             <li>Illustrator</li>
            <li>In-design</li>
@@ -54,8 +72,10 @@ des serveurs de typekit, cette typo est utilisé pour les titres h1 et h2 -->
                       <p></p>
            <li>Super Mario Kart (version super nes)</li>
         </ul>
-<h2>Formations</h2>
-       <ul class="formations">
+           </article>
+            <article class="formations">
+<h2>Ma formations</h2>
+       <ul>
            <li><strong>2008<br /></strong>
              BTS communication Visuelle</li>
            <p></p>
@@ -65,8 +85,15 @@ des serveurs de typekit, cette typo est utilisé pour les titres h1 et h2 -->
             <li><strong>2003<br /></strong>
              BEP préparation de la forme imprimante</li>
         </ul>
+               </article>
+           </div>
+                    
+        <footer>
         <a href="#introduction">Retour à la présentation</a>
         <p></p>
         <a href="https://gguinchard.github.io/moncv/">La version online</a>
+        </footer>
+                    <!-- fermeture de div class contenue-->
+        </div> 
  </body>
 </html>
