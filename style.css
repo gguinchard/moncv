@@ -24,6 +24,16 @@ width:1m;
 margin: 1em;
 background-image: linear-gradient(to bottom, #1B9BD8, #49AFE0,#73C2E7, #99D2EE, #B9E0F3, #D2EBF7, #D2EBF7, #E6F4FB, #F4FAFD, #FDFEFF, #FFFFFF 30%) ;
 }
+
+#bloc-page
+{
+    width: 900px;
+    margin: auto;
+}
+
+@media screen and (min-width: 1024px)
+{/* propriét&és CSS pour écran de plus de 1024px de large */
+
 .toolbar
 {/* Cette barre des taches est un liseret bortedr radius avec un background image en svg (donc modifiable sans dégradation) la position fixed et le top et bottom fixé à 0 à l'intérieur de body permet de s'afficher sur toute la hauteur de la page */
  position: fixed;
@@ -38,11 +48,23 @@ box-shadow:  2px 2px 2px black;
 border-radius: 5px;
     margin-right: 5em;
 }
+.biographie
+{/* h5 est un sous-titre pour la bio */
+display: inline-block;
+justify-content: left;
+vertical-align: top;
+width: 100%;
+height : 5%;
+font-weight: normal; font-size: em; text-align: solid;
+margin-right: 30em;
+}
 
 .socialnetwork
 {
 display: inline-block;
- color:black
+margin-right: auto;
+vertical-align: top;
+ color:black;
 text-align: left;
 width: auto;
 height: auto;
@@ -59,10 +81,11 @@ background-color: #0077B5;
 .contenu
 {
 margin-left: 12%;
+
 }
 header
 {
-background-color: red;
+display: inline-block;
 vertical-align: top;
 justify-content: center;
 }
@@ -104,32 +127,18 @@ margin: 0px 0px 1em 1em;
 height : 10em;
 }
 
-#colonne
-{background-color: red;
-vertical-align: baseline;
-
-}
-
-
-
-.biographie
-{/* h5 est un sous-titre pour la bio */
-display: inline-block;
-vertical-align: top;
-width: 100%;
-height : 5%;
-font-weight: normal; font-size: em; text-align: solid;
-}
-
-
-#colonne
+.colonne
 {
-   margin-left: 170px;
-
-vertical-align: top;
-background-color: orange
-    
+display: flex;
+justify-content: center;
+vertical-align: baseline;
+vertical-align: top;    
 }
+
+
+
+
+
 h2{/* Le format du texte est adapté en proportion par la commande font-size et une ombre est appliqué avec text-shadow */
 font-size: 1.3em; font-weight: bold; color: #E40D7E;
  text-shadow: 1px 1px 1px grey;
@@ -144,8 +153,9 @@ width:30%;
 
 .skill_module
 {/* Cette infographie est un fichier vectoriel, svg créer sur illustrator */
+display: inline-block;
+vertical-align: top;
 width: 100%;
-float: center;
 text-align:right;
 margin: 0em 0em 0em 0m;
 
@@ -195,3 +205,192 @@ a:hover /* Apparence au survol des liens */
 }
 /* Vous pouvez aussi testé ce site sur https://gguinchard.github.io/moncv/
 Merci Pour cette correction */
+}
+
+
+
+
+@media screen and (max-width: 1024px)
+{/* propriét&és CSS pour écran de plus de 1024px de large */
+
+
+
+.logo_Linkedin
+{
+display: inline-block;
+justify-content: center;
+}
+.socialnetwork
+    {
+display: inline-block;
+
+justify-content: center;
+min-width: 40%;
+max-width: 50%;
+font-size: 1.5em;
+font-family: 'MontserratAlternates-Bold'; 'arial black';'sans-serif';
+}
+
+ color:black
+text-align: left;
+
+justify-content: left;
+padding: 0.5em;
+
+}
+.socialnetwork:hover
+{
+hover:     color:white;
+background-color: #0077B5;
+
+}
+
+header
+{
+display: flex;
+flex-direction: column;
+vertical-align: top;
+justify-content: flex-start;
+}
+.introduction{
+display: inline-block;
+text-align: left;
+justify-content: flex-start;
+
+}
+h1, h2,
+{/* Les Titres H2 sont automatique en uppercut si le navigateur accepte le serveur typekit, sinon Montesserrat bold est utilisé et ensuite Arial black et pour finir une sans-serif par défaut si tout le reste ne charge pas */
+font-family: 'uppercut-angle'; 'MontserratAlternates-Bold'; 'arial black';'sans-serif';
+}
+h1 em
+{
+font-style: normal; font-family: 'uppercut-angle'; 'arial black'; 'MontserratAlternates-Bold'; 'sans-serif';
+ font-size: 0.7em; color: #E40D7E; text-align: left;
+}
+h1
+{ /* Le titre h1 est encapsulé dans une box avec une marge incorporée,
+par la suite je cherche à modifié cette boite en forme de bulle de bd avec une fonction polygon peut-être ou shape ?*/
+color: #white; 
+display: inline-block;
+vertical-align: top;
+color: #E40D7E;  font-size: 2em;
+text-shadow: 1px 1px 1px grey;
+ width: 1em;
+background-color: white;
+text-align:left;
+width : auto;
+  height : auto;
+  padding: 0.2em;
+margin-right: 0.5em
+}
+.photo-cv
+img {/* Cette photo flottante est arrondi avec effet d'ombrage*/
+border-radius: 100px; box-shadow: 1px 1px 1Px black;
+width:10em;
+display: inline-block;
+text-align:left;
+margin: 0px 0px 1em 1em;
+height : 10em;
+}
+
+#colonne
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}    
+  
+
+
+
+
+
+.biographie
+{/* h5 est un sous-titre pour la bio */
+display: inline-block;
+right:0px;
+width: auto;
+font-weight: normal; font-size: em; text-align: solid;
+}
+
+
+h2{/* Le format du texte est adapté en proportion par la commande font-size et une ombre est appliqué avec text-shadow */
+font-size: 1.3em; font-weight: bold; color: #E40D7E;
+ text-shadow: 1px 1px 1px grey;
+}
+.experiences
+{
+display: inline-block;
+list-style-type: none;
+text-align: left; 
+width:100%;
+}
+
+.skill_module
+{/* Cette infographie est un fichier vectoriel, svg créer sur illustrator */
+display: inline-block;
+max-width: 70%;
+min-width: 40%;
+text-align:right;
+margin: 0em 0em 0em 0m;
+
+}
+.skills
+{display: inline-block;
+
+vertical-align: top;
+
+list-style-type: none;
+font-size: 1em; color:red;
+width: 100%;
+}
+
+ul
+{
+list-style-type: none;
+font-size: 1em; color:black; text-align: left
+}
+ul em
+{/* les postes sont en oblique avec une typo oblique et la commande font-style oblique*/
+list-style-type: none;
+font-family: 'MontserratAlternates-Italic'; font-style: oblique;
+ font-size 1em; color: black;
+}
+ul strong
+{/* La liste à puce est mis pas en pages avec une couleur differente sur les dates entroduit par la balise html <strong> */
+list-style-type: none;
+font-family: 'MontserratAlternates-Bold';'MontserratAlternates-Bold'; 'arial black';font-style: bold; font-size: 1em; font-weight: bold; color: midnightblue;
+}
+
+.formations
+{display: inline-block;
+
+list-style-type: none;
+font-size: 1em; color:black;
+list-style-type: none;
+width: 100%
+}
+
+footer
+{display: inline-block;
+
+height : auto;
+font-size: auto;
+}
+a:hover /* Apparence au survol des liens */
+{
+     color:white ; background-color: #E40D7E;
+}
+/* Vous pouvez aussi testé ce site sur https://gguinchard.github.io/moncv/
+Merci Pour cette correction */
+
+}
+
+
+
+
+
+
+
+
+
